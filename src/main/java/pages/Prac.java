@@ -91,7 +91,7 @@ WebElement a= driver.findElement(By.xpath("//body/div[1]/div[2]/nav[1]/div[1]/di
 	
 	public void screenshot() throws IOException {
 		File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File DestFile=new File("C:/Users/manoj/eclipse-workspace-new/TestPageFac/Screenshots/" + System.currentTimeMillis() + ".png"); 
+		File DestFile=new File("D:/MAN/EWorkspace/TestPageFac/Screenshots/" + System.currentTimeMillis() + ".png"); 
 		FileUtils.copyFile(screen, DestFile);
 	}
 
