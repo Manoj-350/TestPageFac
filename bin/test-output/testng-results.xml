@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14285" started-at="2021-12-09T06:18:28Z" finished-at="2021-12-09T06:18:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14285" started-at="2021-12-09T06:18:28Z" finished-at="2021-12-09T06:18:42Z">
+      <class name="PracTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:PracTest@1677d1]" name="setup" is-config="true" duration-ms="4055" started-at="2021-12-09T06:18:28Z" finished-at="2021-12-09T06:18:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:PracTest@1677d1]" name="t1" duration-ms="5769" started-at="2021-12-09T06:18:32Z" finished-at="2021-12-09T06:18:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="t2()[pri:0, instance:PracTest@1677d1]" name="t2" duration-ms="219" started-at="2021-12-09T06:18:38Z" finished-at="2021-12-09T06:18:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2 -->
+        <test-method status="PASS" signature="t4()[pri:0, instance:PracTest@1677d1]" name="t4" duration-ms="2982" started-at="2021-12-09T06:18:38Z" finished-at="2021-12-09T06:18:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4 -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:PracTest@1677d1]" name="exit" is-config="true" duration-ms="1218" started-at="2021-12-09T06:18:41Z" finished-at="2021-12-09T06:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- PracTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
