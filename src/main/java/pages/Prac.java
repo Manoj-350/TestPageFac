@@ -46,28 +46,32 @@ public Prac() {
 	
 	
 
-	public String test1() {
+	public String test1(String data1,String data2) throws IOException {
 		
 		driver.get("http://demo.guru99.com/v4");
 		//WebElement usernamebox=driver.findElement(By.name("uid"));
 		//WebElement passwordbox=driver.findElement(By.name("password"));
 		//WebElement btnLogin=driver.findElement(By.name("btnLogin"));
-		usernamebox.sendKeys("mngr371386");
-		passwordbox.sendKeys("YhyrYvu");
+		usernamebox.sendKeys(data1);
+		passwordbox.sendKeys(data2);
 		btnLogin.submit();
+		
+		//driver.switchTo().alert().accept();
 		String abc=driver.getTitle();
 		System.out.println(driver.getTitle());
+		screenshot();
 		return abc;
 		
 	}
 	
 	public void test2() throws IOException {
-		WebElement a= driver.findElement(By.xpath("//body/div[1]/div[2]/nav[1]/div[1]/div[1]/ul[1]//child::li[1]"));
+		WebElement a= driver.findElement(By.xpath("//a[contains(text(),'Selenium') and @class=\"dropdown-toggle\"]"));
+		WebElement b= driver.findElement(By.xpath("//a[contains(text(),'Flash Movie Demo') ]//following::li[3]"));
 		
 		Actions act=new Actions (driver);
 		act.click(a).build().perform();
 		
-		
+		screenshot();
 	}
 	
 	public void test3() {
@@ -78,15 +82,11 @@ WebElement a= driver.findElement(By.xpath("//body/div[1]/div[2]/nav[1]/div[1]/di
 		
 	}
 	
-	public void test4() {
+	public void test4() throws IOException {
 		btnLogout.click();
+		
 		driver.switchTo().alert().accept();
-		try {
-			screenshot();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		screenshot();
 	}
 	
 	public void screenshot() throws IOException {

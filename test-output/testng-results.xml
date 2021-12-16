@@ -2,32 +2,44 @@
 <testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12108" started-at="2021-12-12T19:25:08Z" finished-at="2021-12-12T19:25:20Z">
+  <suite name="Default suite" duration-ms="19645" started-at="2021-12-16T19:44:41Z" finished-at="2021-12-16T19:45:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12108" started-at="2021-12-12T19:25:08Z" finished-at="2021-12-12T19:25:20Z">
+    <test name="Default test" duration-ms="19645" started-at="2021-12-16T19:44:41Z" finished-at="2021-12-16T19:45:00Z">
       <class name="PracTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:PracTest@2b6faea6]" name="setup" is-config="true" duration-ms="2594" started-at="2021-12-12T19:25:08Z" finished-at="2021-12-12T19:25:10Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:PracTest@49c386c8]" name="setup" is-config="true" duration-ms="4232" started-at="2021-12-16T19:44:41Z" finished-at="2021-12-16T19:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="t1()[pri:0, instance:PracTest@2b6faea6]" name="t1" duration-ms="5607" started-at="2021-12-12T19:25:10Z" finished-at="2021-12-12T19:25:16Z">
+        <test-method status="PASS" signature="t1(java.lang.String, java.lang.String)[pri:0, instance:PracTest@49c386c8]" name="t1" duration-ms="7823" started-at="2021-12-16T19:44:47Z" data-provider="dataexcel" finished-at="2021-12-16T19:44:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr371386]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YhyrYvu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t1 -->
-        <test-method status="PASS" signature="t2()[pri:0, instance:PracTest@2b6faea6]" name="t2" duration-ms="208" started-at="2021-12-12T19:25:16Z" finished-at="2021-12-12T19:25:16Z">
+        <test-method status="PASS" signature="t2()[pri:0, instance:PracTest@49c386c8]" name="t2" duration-ms="714" started-at="2021-12-16T19:44:55Z" depends-on-methods="PracTest.t1" finished-at="2021-12-16T19:44:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t2 -->
-        <test-method status="PASS" signature="t4()[pri:0, instance:PracTest@2b6faea6]" name="t4" duration-ms="2908" started-at="2021-12-12T19:25:16Z" finished-at="2021-12-12T19:25:19Z">
+        <test-method status="PASS" signature="t4()[pri:0, instance:PracTest@49c386c8]" name="t4" duration-ms="2983" started-at="2021-12-16T19:44:56Z" depends-on-methods="PracTest.t1" finished-at="2021-12-16T19:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t4 -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:PracTest@2b6faea6]" name="exit" is-config="true" duration-ms="750" started-at="2021-12-12T19:25:19Z" finished-at="2021-12-12T19:25:20Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:PracTest@49c386c8]" name="exit" is-config="true" duration-ms="1374" started-at="2021-12-16T19:44:59Z" finished-at="2021-12-16T19:45:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- PracTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

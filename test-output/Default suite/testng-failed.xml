@@ -5,7 +5,9 @@
     <classes>
       <class name="PracTest">
         <methods>
+          <include name="t4"/>
           <include name="exit"/>
+          <include name="t1" invocation-numbers="0"/>
           <include name="t2"/>
           <include name="setup"/>
         </methods>
