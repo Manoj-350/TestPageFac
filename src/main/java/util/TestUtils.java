@@ -16,13 +16,13 @@ public class TestUtils extends Base{
 	
 	static String filepath="D:/MAN/EWorkspace/TestPageFac/inputData/data.xlsx";
 @SuppressWarnings("resource")
-public static  Object[][] readFile() throws IOException {
+public static  Object[][] readFile(String sheetName) throws IOException {
 	Object[][] data = null;
 	File file=new File(filepath);
 			FileInputStream inputstream=new FileInputStream(file);
 			Workbook book=null;
 book =new XSSFWorkbook(inputstream);
-Sheet booksheet=book.getSheet("abc");
+Sheet booksheet=book.getSheet(sheetName);
 int rowCount=booksheet.getLastRowNum();
 System.out.println(rowCount);
 data =new Object[booksheet.getLastRowNum()+1][booksheet.getRow(0).getLastCellNum()];
@@ -40,7 +40,5 @@ for(int i=0;i<rowCount+1;i++) {
 
 return data;
 }
-public static void main(String[] args) throws IOException {
-	readFile();
-}
+
 }
