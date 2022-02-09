@@ -8,7 +8,7 @@ import  java.sql.ResultSet;
 import  java.sql.DriverManager;		
 import  java.sql.SQLException;		
 public class  dbConnection {				
-	//ework1
+	//new
 
 /*	public static void sendPingRequest(String ipAddress)
             throws UnknownHostException, IOException
