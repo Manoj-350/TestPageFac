@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.ValidLoginPageTest">
-        <methods>
-          <include name="t4"/>
-          <include name="exit"/>
-          <include name="t2"/>
-          <include name="t1" invocation-numbers="0"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.ValidLoginPageTest -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <classes>
-      <class name="testCases.InvalidLoginPageTest">
+      <class name="testCases.NewCustomerTest">
         <methods>
           <include name="exit"/>
-          <include name="t1" invocation-numbers="0"/>
+          <include name="addNewCustomerTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.InvalidLoginPageTest -->
+      </class> <!-- testCases.NewCustomerTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

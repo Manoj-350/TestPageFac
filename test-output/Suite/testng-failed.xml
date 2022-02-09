@@ -14,15 +14,4 @@
       </class> <!-- testCases.ValidLoginPageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <classes>
-      <class name="testCases.InvalidLoginPageTest">
-        <methods>
-          <include name="exit"/>
-          <include name="t1" invocation-numbers="0"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.InvalidLoginPageTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

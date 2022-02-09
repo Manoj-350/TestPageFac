@@ -17,38 +17,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class ValidLoginPage extends Base {
-
-
-@FindBy (name="uid")
-WebElement usernamebox;
-@FindBy (name="password")
-WebElement passwordbox;
-
-@FindBy (name="btnLogin")
-WebElement btnLogin;
-
-@FindBy (xpath="//a[contains(text(),'Log out')]")
-WebElement btnLogout;
-
-
-
-public ValidLoginPage() {
-	
-	PageFactory.initElements(driver, this);
-	System.out.println("cons called");
-}
-
-
-
-	
 	
 
-	public String test1(String data1,String data2) throws IOException {
+	public HomePage test1(String data1,String data2) throws IOException {
 		String abc="";
 	
-		driver.get("http://demo.guru99.com/V1/");
+		
 		//WebElement usernamebox=driver.findElement(By.name("uid"));
 		//WebElement passwordbox=driver.findElement(By.name("password"));
 		//WebElement btnLogin=driver.findElement(By.name("btnLogin"));
@@ -60,10 +37,10 @@ public ValidLoginPage() {
                  		System.out.println(driver.getTitle());
                  		screenshot();
              
-		return abc;
+		return new HomePage();
 		
 	}
-	
+
 	public void test2() throws IOException {
 		WebElement a= driver.findElement(By.xpath("//a[contains(text(),'Selenium') and @class=\"dropdown-toggle\"]"));
 		WebElement b= driver.findElement(By.xpath("//a[contains(text(),'Flash Movie Demo') ]//following::li[3]"));
@@ -89,15 +66,8 @@ WebElement a= driver.findElement(By.xpath("//body/div[1]/div[2]/nav[1]/div[1]/di
 		screenshot();
 	}
 	
-	public void screenshot() throws IOException {
-		File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File DestFile=new File("D:/MAN/EWorkspace/TestPageFac/Screenshots/" + System.currentTimeMillis() + ".png"); 
-		FileUtils.copyFile(screen, DestFile);
-	}
+	
 
-public void tear() {
-		driver.close();
-		driver.quit();
-	}
+
 }
 

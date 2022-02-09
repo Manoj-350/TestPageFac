@@ -37,7 +37,7 @@ public class InvalidLoginPage extends Base {
 	public String test1(String data1, String data2) throws IOException {
 		String abc = "";
 		boolean alertisPresent;
-		driver.get("http://demo.guru99.com/V1/");
+		
 		// WebElement usernamebox=driver.findElement(By.name("uid"));
 		// WebElement passwordbox=driver.findElement(By.name("password"));
 		// WebElement btnLogin=driver.findElement(By.name("btnLogin"));

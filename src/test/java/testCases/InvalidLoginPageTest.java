@@ -43,13 +43,13 @@ public class InvalidLoginPageTest extends Base{
 		
 		System.out.println(data1+data2);
 		
-		assertEquals(act, "GTPL Bank Home Page");
+		assertEquals(act, "Guru99 Bank Home Page");
 		
 	}
 	
 	@AfterClass
 	public void exit(){
-		practice.tear();
+		tear();
 	}
 
 

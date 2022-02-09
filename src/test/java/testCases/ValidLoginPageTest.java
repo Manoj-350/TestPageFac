@@ -11,6 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.Base;
+import pages.HomePage;
 import pages.ValidLoginPage;
 
 public class ValidLoginPageTest extends Base{
@@ -39,13 +40,13 @@ public class ValidLoginPageTest extends Base{
 
 	@Test(dataProvider="dataexcel" , priority = 1)
 	public void t1(String data1,String data2) throws IOException {
-		String act=practice.test1(data1,data2);
+		practice.test1(data1,data2);
 		
-		System.out.println(data1+data2);
+		assertEquals(driver.getTitle(),"Guru99 Bank Manager HomePage");
 		
-		assertEquals(act, "GTPL Bank Manager HomePage");
 		
 	}
+	
 	@Test(dependsOnMethods = {"t1"})
 	public void t2() throws IOException {
 		practice.test2();
@@ -62,7 +63,7 @@ public class ValidLoginPageTest extends Base{
 	
 	@AfterClass
 	public void exit(){
-		practice.tear();
+		tear();
 	}
 
 
