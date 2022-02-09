@@ -24,7 +24,7 @@ public class  dbConnection {
 	public static void  main(String[] args) throws  ClassNotFoundException, SQLException, UnknownHostException, IOException {	
 		// String ipAddress = "127.0.0.1";
 		    //sendPingRequest(ipAddress);
-		//Connection URL Syntax: "jdbc:mysql://ipaddress:portnumber/db_name"		
+		//Connection URL Syntax: "jdbc:mysql://ipaddress:portnumber/db_name" 		
 		String dbUrl = "jdbc:mysql://localhost:3036/demo";					
 
 		//Database Username		
