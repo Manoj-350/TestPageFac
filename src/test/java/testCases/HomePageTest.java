@@ -17,16 +17,23 @@ public class HomePageTest extends Base {
 
 	HomePage home;
 	ValidLoginPage practice;
+	String sheetName="validLogin"; 
 
 	public HomePageTest() {
 		super();
+	}
+	
+	@DataProvider
+	public Object[] dataexcel() throws IOException {
+	Object[] 	extractedData=util.TestUtils.readFile(sheetName);
+	return extractedData;
 	}
 
 	@BeforeClass
 	public void setup() throws IOException {
 		launch();
 		practice = new ValidLoginPage();
-		home = practice.test1("mngr379588", "qyzEren");
+		home = practice.test1("mngr391197", "AsuqeqE");
 	}
 
 	@Test
@@ -36,7 +43,7 @@ public class HomePageTest extends Base {
 	}
 	@Test
 	public void idTest() {
-		assertEquals(home.verifyManagerId(),"Manger Id : mngr379588");
+		assertEquals(home.verifyManagerId(),"Manger Id : mngr391197");
 	}
 	
 	@AfterClass
