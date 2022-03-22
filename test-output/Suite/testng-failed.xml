@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test3(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ExtentReportsListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test4(failed)">
     <classes>
-      <class name="testCases.HomePageTest">
+      <class name="testCases.NewCustomerTest">
         <methods>
-          <include name="setup"/>
-          <include name="idTest"/>
           <include name="exit"/>
+          <include name="addNewCustomerTest" invocation-numbers="0"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.HomePageTest -->
+      </class> <!-- testCases.NewCustomerTest -->
     </classes>
-  </test> <!-- Test3(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
