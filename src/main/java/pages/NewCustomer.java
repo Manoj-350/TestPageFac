@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NewCustomer extends Base {
 
@@ -55,14 +57,16 @@ public class NewCustomer extends Base {
 	
 	public String addNewCustomer(String name, String dob, String address, String city, String state, String pin, String mobile, String email, String password
 ) throws InterruptedException{
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 	int size= driver.findElements(By.tagName("iframe")).size();
 	System.out.println(size);
 		driver.switchTo().frame("google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0");
 		driver.switchTo().frame("ad_iframe");
 		
 		System.out.println(driver.getTitle());
-		Thread.sleep(2000);
+		WebDriverWait wait= new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(Closeaddiframebutton));
+		//Thread.sleep(2000);
 		Closeaddiframebutton.click();
 		driver.switchTo().defaultContent();
 		inputnamebox.sendKeys(name);

@@ -3,8 +3,10 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -21,6 +23,7 @@ public class NewCustomerTest extends Base{
 	HomePage home;
 	NewCustomer newcustomer;
 	String sheetName="addnewcustomer";
+	String sheetName2="validLogin";
 	public NewCustomerTest() {
 		super();
 	}
@@ -30,15 +33,21 @@ public class NewCustomerTest extends Base{
 	Object[] 	extractedData=util.TestUtils.readFile(sheetName);
 	return extractedData;
 	}
+	@DataProvider
+	public Object[] dataexcelLogin() throws IOException {
+	Object[] 	extractedData=util.TestUtils.readFile(sheetName2);
+	return extractedData;
+	}
 	
 	
 @BeforeMethod
 public void setup() throws IOException {
 	launch();
 	practice=new ValidLoginPage();
-	home=practice.test1("mngr379588", "qyzEren");
+	home=practice.test1(prop.getProperty("validUsername"), prop.getProperty("validPassword"));
 	newcustomer=home.NavigateaddNewCustomer();
 	}
+	
 
 @Test (priority=1, dataProvider="dataexcel")
 public void addNewCustomerTest(String name, String dob, String address, String city, String state, String pin, String mobile, String email, String password
@@ -50,7 +59,7 @@ public void addNewCustomerTest(String name, String dob, String address, String c
 }
 
 
-@AfterClass
+@AfterMethod
 public void exit(){
 	tear();
 }

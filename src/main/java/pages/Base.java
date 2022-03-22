@@ -1,7 +1,10 @@
 package pages;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -17,7 +20,7 @@ import org.testng.annotations.Test;
 
 public class Base {
 	public static	WebDriver driver;
-
+	public static Properties prop;
 	@FindBy (name="uid")
 	WebElement usernamebox;
 	@FindBy (name="password")
@@ -31,6 +34,17 @@ public class Base {
 	
 	public Base (){
 		PageFactory.initElements(driver, this);
+		try{
+			prop = new Properties();
+			FileInputStream ip= new FileInputStream("D:/MAN/EWorkspace/TestPageFac/src/main/java/Config/config.properties");
+			prop.load(ip);
+		}
+		catch (FileNotFoundException e){
+			e.printStackTrace();
+		}
+		catch (IOException e){
+			e.printStackTrace();
+			}
 	}
 	
 	public void launch() {
@@ -52,6 +66,8 @@ public class Base {
 		File DestFile=new File("D:/MAN/EWorkspace/TestPageFac/Screenshots/" + System.currentTimeMillis() + ".png"); 
 		FileUtils.copyFile(screen, DestFile);
 	}
+	
+
 	
 	public void tear() {
 		driver.close();

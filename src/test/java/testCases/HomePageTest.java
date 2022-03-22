@@ -33,11 +33,13 @@ public class HomePageTest extends Base {
 	public void setup() throws IOException {
 		launch();
 		practice = new ValidLoginPage();
-		home = practice.test1("mngr391197", "AsuqeqE");
+		//home = practice.test1("mngr391197", "AsuqeqE");
 	}
 
-	@Test
-	public void homeTitleTest() {
+	@Test(dataProvider="dataexcel")
+	public void homeTitleTest(String data1,String data2) throws IOException {
+		home=practice.test1(data1,data2);
+		
 		String title = home.verifyHomePageTitle();
 		assertEquals(title, "Guru99 Bank Manager HomePage");
 	}
