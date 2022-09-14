@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomePageTest" hash-for-method="idTest">idTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +116,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.NewCustomerTest" hash-for-method="addNewCustomerTest(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585)">addNewCustomerTest(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.NewCustomerTest" hash-for-method="addNewCustomerTest(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585)">addNewCustomerTest(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.NewCustomerTest" hash-for-method="addNewCustomerTest(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585)">addNewCustomerTest(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.NewCustomerTest" hash-for-method="addNewCustomerTest(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585)">addNewCustomerTest(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomePageTest" hash-for-method="homeTitleTest(mngr391197, AsuqeqE)">homeTitleTest(mngr391197, AsuqeqE)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomePageTest" hash-for-method="homeTitleTest(mngr406150, ehezYrY)">homeTitleTest(mngr406150, ehezYrY)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomePageTest" hash-for-method="idTest">idTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.ValidLoginPageTest" hash-for-method="t1(mngr391197, AsuqeqE)">t1(mngr391197, AsuqeqE)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.ValidLoginPageTest" hash-for-method="t1(mngr406150, ehezYrY)">t1(mngr406150, ehezYrY)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,6 +161,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="idTest">
+                  </a> <!-- idTest -->
+                  <span class="method-name">idTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Manger Id : mngr391197] but found [Manger Id : mngr406150]
+	at testCases.HomePageTest.idTest(HomePageTest.java:48)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -160,18 +188,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewCustomerTest(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585)">
-                  </a> <!-- addNewCustomerTest(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585) -->
+                  <a name="addNewCustomerTest(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585)">
+                  </a> <!-- addNewCustomerTest(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585) -->
                   <span class="method-name">addNewCustomerTest</span>
-                  <span class="parameters">(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585)</span>
+                  <span class="parameters">(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewCustomerTest(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585)">
-                  </a> <!-- addNewCustomerTest(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585) -->
+                  <a name="addNewCustomerTest(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585)">
+                  </a> <!-- addNewCustomerTest(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585) -->
                   <span class="method-name">addNewCustomerTest</span>
-                  <span class="parameters">(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585)</span>
+                  <span class="parameters">(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,10 +228,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="t1(mngr391197, AsuqeqE)">
-                  </a> <!-- t1(mngr391197, AsuqeqE) -->
+                  <a name="t1(mngr406150, ehezYrY)">
+                  </a> <!-- t1(mngr406150, ehezYrY) -->
                   <span class="method-name">t1</span>
-                  <span class="parameters">(mngr391197, AsuqeqE)</span>
+                  <span class="parameters">(mngr406150, ehezYrY)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -230,17 +258,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="homeTitleTest(mngr391197, AsuqeqE)">
-                  </a> <!-- homeTitleTest(mngr391197, AsuqeqE) -->
+                  <a name="homeTitleTest(mngr406150, ehezYrY)">
+                  </a> <!-- homeTitleTest(mngr406150, ehezYrY) -->
                   <span class="method-name">homeTitleTest</span>
-                  <span class="parameters">(mngr391197, AsuqeqE)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="idTest">
-                  </a> <!-- idTest -->
-                  <span class="method-name">idTest</span>
+                  <span class="parameters">(mngr406150, ehezYrY)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,40 +349,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addNewCustomerTest')
 data.setCell(0, 2, 'testCases.NewCustomerTest')
-data.setCell(0, 3, 32335);
+data.setCell(0, 3, 18833);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addNewCustomerTest')
 data.setCell(1, 2, 'testCases.NewCustomerTest')
-data.setCell(1, 3, 31174);
+data.setCell(1, 3, 18357);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 't1')
+data.setCell(2, 1, 't4')
 data.setCell(2, 2, 'testCases.ValidLoginPageTest')
-data.setCell(2, 3, 14234);
+data.setCell(2, 3, 2392);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 't2')
+data.setCell(3, 1, 't1')
 data.setCell(3, 2, 'testCases.ValidLoginPageTest')
-data.setCell(3, 3, 8758);
+data.setCell(3, 3, 2257);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'homeTitleTest')
-data.setCell(4, 2, 'testCases.HomePageTest')
-data.setCell(4, 3, 7760);
+data.setCell(4, 1, 't1')
+data.setCell(4, 2, 'testCases.InvalidLoginPageTest')
+data.setCell(4, 3, 2176);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 't1')
-data.setCell(5, 2, 'testCases.InvalidLoginPageTest')
-data.setCell(5, 3, 6950);
+data.setCell(5, 1, 'homeTitleTest')
+data.setCell(5, 2, 'testCases.HomePageTest')
+data.setCell(5, 3, 1861);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 't4')
+data.setCell(6, 1, 't2')
 data.setCell(6, 2, 'testCases.ValidLoginPageTest')
-data.setCell(6, 3, 4104);
+data.setCell(6, 3, 645);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'idTest')
 data.setCell(7, 2, 'testCases.HomePageTest')
-data.setCell(7, 3, 49);
+data.setCell(7, 3, 43);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -400,81 +421,83 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">t1(mngr391197, AsuqeqE)</span>
-                <span class="method-start">8524 ms</span>
+                <span class="method-name">t1(mngr406150, ehezYrY)</span>
+                <span class="method-start">7876 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">t2</span>
-                <span class="method-start">22764 ms</span>
+                <span class="method-start">10140 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">t4</span>
-                <span class="method-start">31524 ms</span>
+                <span class="method-start">10788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">35630 ms</span>
+                <span class="method-start">13181 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.InvalidLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">36329 ms</span>
+                <span class="method-start">13967 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">t1(mngr371386, YhyrYvu)</span>
-                <span class="method-start">44393 ms</span>
+                <span class="method-start">18992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">51345 ms</span>
+                <span class="method-start">21169 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">52110 ms</span>
+                <span class="method-start">21860 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">homeTitleTest(mngr391197, AsuqeqE)</span>
-                <span class="method-start">59034 ms</span>
+                <span class="method-name">homeTitleTest(mngr406150, ehezYrY)</span>
+                <span class="method-start">26783 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">idTest</span>
-                <span class="method-start">66797 ms</span>
+                <span class="method-start">28645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">66848 ms</span>
+                <span class="method-start">28691 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.NewCustomerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">67646 ms</span>
+                <span class="method-start">29424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addNewCustomerTest(manojkumari, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj24@gmail.com, 789585)</span>
-                <span class="method-start">81653 ms</span>
+                <span class="method-name">addNewCustomerTest(manojkumark, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj26@gmail.com, 789585)</span>
+                <span class="method-start">36252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit</span>
-                <span class="method-start">112829 ms</span>
+                <span class="method-start">55087 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">117606 ms</span>
+                <span class="method-start">55799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addNewCustomerTest(manojkumarj, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj25@gmail.com, 789585)</span>
-                <span class="method-start">132495 ms</span>
+                <span class="method-name">addNewCustomerTest(manojkumarl, 281992, shikarpur, shikarpur, UP, 202395, 9599, manoj27@gmail.com, 789585)</span>
+                <span class="method-start">62723 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit</span>
-                <span class="method-start">164832 ms</span>
+                <span class="method-start">81081 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

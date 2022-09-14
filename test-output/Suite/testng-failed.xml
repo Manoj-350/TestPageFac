@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="ExtentReportsListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Test4(failed)">
+  <test thread-count="5" name="Test3(failed)">
     <classes>
-      <class name="testCases.NewCustomerTest">
+      <class name="testCases.HomePageTest">
         <methods>
-          <include name="exit"/>
-          <include name="addNewCustomerTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="idTest"/>
+          <include name="exit"/>
         </methods>
-      </class> <!-- testCases.NewCustomerTest -->
+      </class> <!-- testCases.HomePageTest -->
     </classes>
-  </test> <!-- Test4(failed) -->
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->
