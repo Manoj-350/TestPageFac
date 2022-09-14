@@ -45,7 +45,7 @@ public class HomePageTest extends Base {
 	}
 	@Test
 	public void idTest() {
-		assertEquals(home.verifyManagerId(),"Manger Id : mngr391197");
+		assertEquals(home.verifyManagerId(),"Manger Id : mngr437157");
 	}
 	
 	@AfterClass

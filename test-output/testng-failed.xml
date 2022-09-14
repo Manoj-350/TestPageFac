@@ -15,4 +15,15 @@
       </class> <!-- testCases.HomePageTest -->
     </classes>
   </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="testCases.NewCustomerTest">
+        <methods>
+          <include name="exit"/>
+          <include name="addNewCustomerTest" invocation-numbers="0 1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.NewCustomerTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
