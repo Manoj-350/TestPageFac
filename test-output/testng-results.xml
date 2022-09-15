@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35029" started-at="2022-09-16T01:27:57 IST" finished-at="2022-09-16T01:28:32 IST">
+  <suite name="Suite" duration-ms="76613" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:37:05 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35029" started-at="2022-09-16T01:27:57 IST" finished-at="2022-09-16T01:28:32 IST">
-      <class name="testCases.NewTabTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.NewTabTest@2a70a3d8]" name="setup" is-config="true" duration-ms="8912" started-at="2022-09-16T01:27:57 IST" finished-at="2022-09-16T01:28:06 IST">
+    <test name="Test1" duration-ms="38861" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:36:27 IST">
+      <class name="testCases.ValidLoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="setup" is-config="true" duration-ms="12259" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:36:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="NewTabmethodTest()[pri:0, instance:testCases.NewTabTest@2a70a3d8]" name="NewTabmethodTest" duration-ms="25359" started-at="2022-09-16T01:28:06 IST" finished-at="2022-09-16T01:28:31 IST">
+        <test-method status="PASS" signature="t1(java.lang.String,java.lang.String)[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t1" duration-ms="10759" started-at="2022-09-16T02:36:03 IST" data-provider="dataexcel" finished-at="2022-09-16T02:36:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr437157]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ajAruqu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NewTabmethodTest -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.NewTabTest@2a70a3d8]" name="exit" is-config="true" duration-ms="714" started-at="2022-09-16T01:28:31 IST" finished-at="2022-09-16T01:28:32 IST">
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="t2()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t2" duration-ms="8752" started-at="2022-09-16T02:36:14 IST" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-09-16T02:36:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2 -->
+        <test-method status="PASS" signature="t4()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t4" duration-ms="3917" started-at="2022-09-16T02:36:23 IST" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-09-16T02:36:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4 -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="exit" is-config="true" duration-ms="727" started-at="2022-09-16T02:36:26 IST" finished-at="2022-09-16T02:36:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-      </class> <!-- testCases.NewTabTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.ValidLoginPageTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="21211" started-at="2022-09-16T02:36:27 IST" finished-at="2022-09-16T02:36:48 IST">
+      <class name="testCases.InvalidLoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="setup" is-config="true" duration-ms="11438" started-at="2022-09-16T02:36:27 IST" finished-at="2022-09-16T02:36:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="t1(java.lang.String,java.lang.String)[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="t1" duration-ms="9019" started-at="2022-09-16T02:36:39 IST" data-provider="dataexcel" finished-at="2022-09-16T02:36:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr371386]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YhyrYvu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="exit" is-config="true" duration-ms="677" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:36:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- testCases.InvalidLoginPageTest -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="16513" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:37:05 IST">
+      <class name="testCases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="setup" is-config="true" duration-ms="7435" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:36:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homeTitleTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.HomePageTest@2698dc7]" name="homeTitleTest" duration-ms="8258" started-at="2022-09-16T02:36:56 IST" data-provider="dataexcel" finished-at="2022-09-16T02:37:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr437157]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ajAruqu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeTitleTest -->
+        <test-method status="PASS" signature="idTest()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="idTest" duration-ms="53" started-at="2022-09-16T02:37:04 IST" finished-at="2022-09-16T02:37:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idTest -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="exit" is-config="true" duration-ms="722" started-at="2022-09-16T02:37:04 IST" finished-at="2022-09-16T02:37:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- testCases.HomePageTest -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
 </testng-results>
