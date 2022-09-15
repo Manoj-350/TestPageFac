@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="9" passed="8">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="165557" started-at="2022-03-22T11:09:25Z" finished-at="2022-03-22T11:12:10Z">
+  <suite name="Suite" duration-ms="76613" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:37:05 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="36314" started-at="2022-03-22T11:09:25Z" finished-at="2022-03-22T11:10:01Z">
+    <test name="Test1" duration-ms="38861" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:36:27 IST">
       <class name="testCases.ValidLoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.ValidLoginPageTest@41e36e46]" name="setup" is-config="true" duration-ms="6456" started-at="2022-03-22T11:09:25Z" finished-at="2022-03-22T11:09:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="setup" is-config="true" duration-ms="12259" started-at="2022-09-16T02:35:48 IST" finished-at="2022-09-16T02:36:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="t1(java.lang.String, java.lang.String)[pri:1, instance:testCases.ValidLoginPageTest@41e36e46]" name="t1" duration-ms="14234" started-at="2022-03-22T11:09:33Z" data-provider="dataexcel" finished-at="2022-03-22T11:09:48Z">
+        <test-method status="PASS" signature="t1(java.lang.String,java.lang.String)[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t1" duration-ms="10759" started-at="2022-09-16T02:36:03 IST" data-provider="dataexcel" finished-at="2022-09-16T02:36:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr391197]]>
+                <![CDATA[mngr437157]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[AsuqeqE]]>
+                <![CDATA[ajAruqu]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t1 -->
-        <test-method status="PASS" signature="t2()[pri:0, instance:testCases.ValidLoginPageTest@41e36e46]" name="t2" duration-ms="8758" started-at="2022-03-22T11:09:48Z" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-03-22T11:09:56Z">
+        <test-method status="PASS" signature="t2()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t2" duration-ms="8752" started-at="2022-09-16T02:36:14 IST" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-09-16T02:36:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t2 -->
-        <test-method status="PASS" signature="t4()[pri:0, instance:testCases.ValidLoginPageTest@41e36e46]" name="t4" duration-ms="4104" started-at="2022-03-22T11:09:56Z" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-03-22T11:10:00Z">
+        <test-method status="PASS" signature="t4()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="t4" duration-ms="3917" started-at="2022-09-16T02:36:23 IST" depends-on-methods="testCases.ValidLoginPageTest.t1" finished-at="2022-09-16T02:36:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t4 -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.ValidLoginPageTest@41e36e46]" name="exit" is-config="true" duration-ms="674" started-at="2022-03-22T11:10:00Z" finished-at="2022-03-22T11:10:01Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.ValidLoginPageTest@fcd6521]" name="exit" is-config="true" duration-ms="727" started-at="2022-09-16T02:36:26 IST" finished-at="2022-09-16T02:36:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- testCases.ValidLoginPageTest -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="15772" started-at="2022-03-22T11:10:01Z" finished-at="2022-03-22T11:10:17Z">
+    <test name="Test2" duration-ms="21211" started-at="2022-09-16T02:36:27 IST" finished-at="2022-09-16T02:36:48 IST">
       <class name="testCases.InvalidLoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.InvalidLoginPageTest@393671df]" name="setup" is-config="true" duration-ms="7988" started-at="2022-03-22T11:10:01Z" finished-at="2022-03-22T11:10:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="setup" is-config="true" duration-ms="11438" started-at="2022-09-16T02:36:27 IST" finished-at="2022-09-16T02:36:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="t1(java.lang.String, java.lang.String)[pri:5, instance:testCases.InvalidLoginPageTest@393671df]" name="t1" duration-ms="6950" started-at="2022-03-22T11:10:09Z" data-provider="dataexcel" finished-at="2022-03-22T11:10:16Z">
+        <test-method status="PASS" signature="t1(java.lang.String,java.lang.String)[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="t1" duration-ms="9019" started-at="2022-09-16T02:36:39 IST" data-provider="dataexcel" finished-at="2022-09-16T02:36:48 IST">
           <params>
             <param index="0">
               <value>
@@ -63,165 +63,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t1 -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.InvalidLoginPageTest@393671df]" name="exit" is-config="true" duration-ms="755" started-at="2022-03-22T11:10:16Z" finished-at="2022-03-22T11:10:17Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.InvalidLoginPageTest@15bfd87]" name="exit" is-config="true" duration-ms="677" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:36:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- testCases.InvalidLoginPageTest -->
     </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="15467" started-at="2022-03-22T11:10:17Z" finished-at="2022-03-22T11:10:32Z">
+    <test name="Test3" duration-ms="16513" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:37:05 IST">
       <class name="testCases.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.HomePageTest@6973b51b]" name="setup" is-config="true" duration-ms="6871" started-at="2022-03-22T11:10:17Z" finished-at="2022-03-22T11:10:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="setup" is-config="true" duration-ms="7435" started-at="2022-09-16T02:36:48 IST" finished-at="2022-09-16T02:36:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="homeTitleTest(java.lang.String, java.lang.String)[pri:0, instance:testCases.HomePageTest@6973b51b]" name="homeTitleTest" duration-ms="7760" started-at="2022-03-22T11:10:24Z" data-provider="dataexcel" finished-at="2022-03-22T11:10:32Z">
+        <test-method status="PASS" signature="homeTitleTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.HomePageTest@2698dc7]" name="homeTitleTest" duration-ms="8258" started-at="2022-09-16T02:36:56 IST" data-provider="dataexcel" finished-at="2022-09-16T02:37:04 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr391197]]>
+                <![CDATA[mngr437157]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[AsuqeqE]]>
+                <![CDATA[ajAruqu]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeTitleTest -->
-        <test-method status="PASS" signature="idTest()[pri:0, instance:testCases.HomePageTest@6973b51b]" name="idTest" duration-ms="49" started-at="2022-03-22T11:10:32Z" finished-at="2022-03-22T11:10:32Z">
+        <test-method status="PASS" signature="idTest()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="idTest" duration-ms="53" started-at="2022-09-16T02:37:04 IST" finished-at="2022-09-16T02:37:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- idTest -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.HomePageTest@6973b51b]" name="exit" is-config="true" duration-ms="727" started-at="2022-03-22T11:10:32Z" finished-at="2022-03-22T11:10:32Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.HomePageTest@2698dc7]" name="exit" is-config="true" duration-ms="722" started-at="2022-09-16T02:37:04 IST" finished-at="2022-09-16T02:37:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- testCases.HomePageTest -->
     </test> <!-- Test3 -->
-    <test name="Test4" duration-ms="97962" started-at="2022-03-22T11:10:32Z" finished-at="2022-03-22T11:12:10Z">
-      <class name="testCases.NewCustomerTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.NewCustomerTest@dbf57b3]" name="setup" is-config="true" duration-ms="14006" started-at="2022-03-22T11:10:32Z" finished-at="2022-03-22T11:10:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addNewCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testCases.NewCustomerTest@dbf57b3]" name="addNewCustomerTest" duration-ms="31174" started-at="2022-03-22T11:10:46Z" data-provider="dataexcel" finished-at="2022-03-22T11:11:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manojkumari]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[281992]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[shikarpur]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[shikarpur]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[UP]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[202395]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[9599]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[manoj24@gmail.com]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[789585]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCustomerTest -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.NewCustomerTest@dbf57b3]" name="exit" is-config="true" duration-ms="4776" started-at="2022-03-22T11:11:18Z" finished-at="2022-03-22T11:11:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.NewCustomerTest@dbf57b3]" name="setup" is-config="true" duration-ms="14889" started-at="2022-03-22T11:11:22Z" finished-at="2022-03-22T11:11:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addNewCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testCases.NewCustomerTest@dbf57b3]" name="addNewCustomerTest" duration-ms="32335" started-at="2022-03-22T11:11:37Z" data-provider="dataexcel" finished-at="2022-03-22T11:12:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manojkumarj]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[281992]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[shikarpur]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[shikarpur]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[UP]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[202395]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[9599]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[manoj25@gmail.com]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[789585]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCustomerTest -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:testCases.NewCustomerTest@dbf57b3]" name="exit" is-config="true" duration-ms="715" started-at="2022-03-22T11:12:10Z" finished-at="2022-03-22T11:12:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exit -->
-      </class> <!-- testCases.NewCustomerTest -->
-    </test> <!-- Test4 -->
   </suite> <!-- Suite -->
 </testng-results>

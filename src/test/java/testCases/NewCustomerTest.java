@@ -49,7 +49,7 @@ public void setup() throws IOException {
 	}
 	
 
-@Test (priority=1, dataProvider="dataexcel")
+@Test ( dataProvider="dataexcel")
 public void addNewCustomerTest(String name, String dob, String address, String city, String state, String pin, String mobile, String email, String password
 ) throws InterruptedException {
 	String check=newcustomer.addNewCustomer(name, dob, address, city, state, pin, mobile, email, password

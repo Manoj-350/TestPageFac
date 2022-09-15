@@ -9,7 +9,7 @@
       <class name="testCases.NewCustomerTest">
         <methods>
           <include name="exit"/>
-          <include name="addNewCustomerTest" invocation-numbers="0"/>
+          <include name="addNewCustomerTest" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.NewCustomerTest -->

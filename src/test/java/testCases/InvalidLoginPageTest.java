@@ -37,7 +37,7 @@ public class InvalidLoginPageTest extends Base{
 		
 	}
 
-	@Test(dataProvider="dataexcel" , priority=5)
+	@Test(dataProvider="dataexcel" )
 	public void t1(String data1,String data2) throws IOException {
 		String act=practice.test1(data1,data2);
 		
