@@ -1,7 +1,7 @@
-set projectlocation=D:\MAN\EWorkspace\TestPageFac
-cd %projectlocation%
-mvn clean compile -DsuiteXmlFile=testng.xml
+set projectLocation=D:\MAN\EWorkspace\TestPageFac
+cd %projectLocation%
+set classpath=%projectLocation%\bin;%projectLocation%\lib\*
+java org.testng.TestNG %projectLocation%\testng.xml
 pause
-
 
 
