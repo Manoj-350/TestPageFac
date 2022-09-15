@@ -22,12 +22,13 @@
             <class name="testCases.HomePageTest"/>
     </classes>
   </test>
-  <test thread-count="1" name="Test4">
+  <!-- <test thread-count="1" name="Test4">
     <classes>
             
             <class name="testCases.NewCustomerTest"/>
     </classes>
   </test>
+   -->
   
   
   <!-- Test -->
