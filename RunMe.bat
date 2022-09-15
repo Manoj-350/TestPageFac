@@ -1,6 +1,6 @@
 set projectlocation=D:\MAN\EWorkspace\TestPageFac
 cd %projectlocation%
-mvn -DsuiteXmlFile=testng.xml
+mvn clean -DsuiteXmlFile=testng.xml
 pause
 
 
