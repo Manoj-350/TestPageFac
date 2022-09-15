@@ -38,7 +38,7 @@ public class ValidLoginPageTest extends Base{
 		
 	}
 
-	@Test(dataProvider="dataexcel" , priority = 1)
+	@Test(dataProvider="dataexcel" )
 	public void t1(String data1,String data2) throws IOException {
 		practice.test1(data1,data2);
 		
@@ -59,6 +59,8 @@ public class ValidLoginPageTest extends Base{
 	public void t4() throws IOException {
 		practice.test4();
 	}
+	
+	
 	
 	
 	@AfterClass
