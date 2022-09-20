@@ -16,12 +16,12 @@
             <class name="testCases.InvalidLoginPageTest"/>
     </classes>
   </test> 
-  <test thread-count="1" name="Test3">
+ <!--  <test thread-count="1" name="Test3">
     <classes>
             
             <class name="testCases.HomePageTest"/>
     </classes>
-  </test>
+  </test> -->
   <!-- <test thread-count="1" name="Test4">
     <classes>
             
