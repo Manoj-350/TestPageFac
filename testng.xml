@@ -16,19 +16,33 @@
             <class name="testCases.InvalidLoginPageTest"/>
     </classes>
   </test> 
- <!--  <test thread-count="1" name="Test3">
+  <test thread-count="1" name="Test3">
     <classes>
             
             <class name="testCases.HomePageTest"/>
     </classes>
-  </test> -->
-  <!-- <test thread-count="1" name="Test4">
+  </test> 
+ <test thread-count="1" name="Test4">
     <classes>
             
             <class name="testCases.NewCustomerTest"/>
     </classes>
   </test>
-   -->
+  <test thread-count="1" name="Test5">
+    <classes>
+            
+            <class name="testCases.NewAccountTest"/>
+    </classes>
+  </test>
+  <test thread-count="1" name="Test6">
+    <classes>
+            
+            <class name="testCases.NewTabTest"/>
+    </classes>
+  </test>
+  
+  
+   
   
   
   <!-- Test -->
